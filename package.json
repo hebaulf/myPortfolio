@@ -1,0 +1,25 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",  
+  "author": "Heba",
+  "license": "ISC",
+
+  "homepage": "https://github.com/hebaulf/myPortfolio#readme",
+  "bugs": { "url": "https://github.com/hebaulf/myPortfolio/issues" },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebaulf/myPortfolio.git"
+  },
+
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  }
+}
