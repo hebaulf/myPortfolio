@@ -318,10 +318,10 @@ body {
 .wrapper {
   flex: 1; }
 
-article {
+section {
   margin: 3rem;
   padding: 2rem;
-  background-color: aquamarine; }
+  background-color: #9bffde; }
 
 h1,
 h2,
