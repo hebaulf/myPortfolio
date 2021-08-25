@@ -2,24 +2,25 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",  
+  "main": "script.js",
   "author": "Heba",
   "license": "ISC",
-
   "homepage": "https://github.com/hebaulf/myPortfolio#readme",
-  "bugs": { "url": "https://github.com/hebaulf/myPortfolio/issues" },
-
+  "bugs": {
+    "url": "https://github.com/hebaulf/myPortfolio/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hebaulf/myPortfolio.git"
   },
-
-  "dependencies": {
-    "node-sass": "^6.0.1"
-  },
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles/sass/main.scss styles/css/style.css",
+    "css-minify": "cleancss --format breaksWith=lf --source-map --source-map-inline-sources --output styles/css/style.min.css styles/css/style.css",
+    "process-styles": "npm run compile-styles && npm run css-minify"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.3.3",
+    "node-sass": "^6.0.1"
   }
 }
