@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I am Heba</title>
-    <meta name="description" content="A web portfolio for Heba, an aspiring web developer.">
+    <meta name="description" content="This is my portfolio. I'm a web developer currently studying at Reykjavík Aca­demy of Web Develop­ment. I have some years of experience working at web agencies witch has introduced me to various programming languages and platforms.">
     <meta name="keywords" content="Heba, portfolio, developer, web developer">
     <meta name="author" content="Heba Farestveit Úlfarsdóttir">
     <link rel="stylesheet" href="./styles/css/style.css">
@@ -16,7 +16,7 @@
     <!-- Start of Header -->
     <header>
         <div>
-            <img src="" alt="">
+        
         </div>
 
         <nav>
@@ -32,59 +32,93 @@
 
     <!-- Start of Main -->
     <main class="wrapper">
-        <section id="about" class="article article__about">
-            <h1>Hello</h1>
-            <img src="./assets/heba_portrait.JPG" alt="Portrait of Heba">
-            <h2>I am Heba</h2>
-            <div class="my_info"></div>
-            <p>I'm a web developer currently studying at Reykjavík Aca­demy of Web Develop­ment.
-                I have some years of experience working at web agencies witch has
-                introduced me to various programming languages and platforms.</p>
-        </section>
 
-        <section id="skill" class="article article__skill">
-            <h2>My Skills</h2>
-            <div>
-                box 1
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h1 class="header about__header">Hello</h1>
+            <h2 class="about__subheader">I am Heba</h2>
+            <div class="about__img">
+                <img src="./assets/heba_portrait.JPG?height=200&width=200&mode=crop" alt="Portrait of Heba">
             </div>
-            <div>
-                box 2
-            </div>
-            <div>
-                box 3
-            </div>
-            <div>
-                box 4
+            <div class="about__info">
+                <p>I'm a web developer currently studying at Reykjavík Aca­demy of Web Develop­ment. I have some years of experience working at web agencies witch has introduced me to various programming languages and platforms.</p>
+                <p>My interest is mostly in programming well-designed responsive websites and I consider myself to have a good eye for detail and do my best to achieve the right look and experience as the designer intended and also try to cultivate my meticulousness, orderliness and good finish. when it comes to writing code.</p>
+                <p>I still have a lot to learn and I am very interested in working with good and talented people in the workplace with a learning strategy.</p>
             </div>
         </section>
 
-        <section id="projects" class="article article__projects">
-            <h2>My Projects</h2>
-            <div>
-                <h4><a href="https://www.veritas.is/samfelagsskyrsla">Samfélagsskýrsla Veritas</a> [ 2021 ]</h4>
-                <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+        <!-- About Section -->
+        <section id="skill" class="skill">
+            <h2 class="subheader">My Skills</h2>
+            <div class="skill__item">
+                <h4>Html</h4>
+                <div class="meter orange nostripes">
+                    <span style="width: 85%"></span>
+                </div>
             </div>
-            <div>
-                <h4><a href="https://www.veritas.is/">veritas.is</a> [ 2020 ]</h4>
-                <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+            <div class="skill__item">
+                <h4>CSS</h4>
             </div>
-            <div>
-                <h4><a href="https://www.felagsbustadir.is/">felagsbustadir.is</a> [ 2020 ]</h4>
-                <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+            <div class="skill__item">
+                <h4>JS</h4>
             </div>
-            <div>
-                <h4><a href="https://www.kolibri.is/">kolibri.is</a> [ 2019 ]</h4>
-                <p>Website developed in collaboration with Kolibri.</p>
-                <p>Using Prismic as a headless cms and Next.js (React) with Typescript and Zeit Now for deploy.</p>
-            </div>
-            <div>
-                <h4><a href="https://www.minilux.is/">minilux.is</a> [ 2018 ]</h4>
-                <p>Wix template web with tweaked design and connection to Braintree payment gateway.</p>
+            <div class="skill__item">
+                <h4>Figma</h4>
             </div>
         </section>
 
-        <section id="jobs" class="article article__jobs">
-            <h2>Previous Jobs</h2>
+        <section id="projects" class="projects">
+            <h2 class="subheader">My Projects</h2>
+            <div class="projects__item">
+                <div class="projects__item__info">
+                    <h4><a href="https://www.veritas.is/samfelagsskyrsla">Veritas Social Report 2020</a> [ 2021 ]</h4>
+                    <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+                </div>
+                <div class="projects__item__img">
+                    <img src="./assets/veritas-samfelagsskyrsla.png" alt="Screenshot of project Veritas Social Report 2020 webpage">
+                </div>
+            </div>
+            <div class="projects__item">
+                <div class="projects__item__info">
+                    <h4><a href="https://www.veritas.is/">veritas.is</a> [ 2020 ]</h4>
+                    <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+                </div>
+                <div class="projects__item__img">
+                    <img src="./assets/veritas.png" alt="">
+                </div>
+            </div>
+            <div class="projects__item">
+                <div class="projects__item__info">
+                    <h4><a href="https://www.felagsbustadir.is/">felagsbustadir.is</a> [ 2020 ]</h4>
+                    <p>A website made from scratch by design at Vettvangur using Umbraco CMS.</p>
+                </div>
+                <div class="projects__item__img">
+                    <img src="./assets/felagsbustadir.png" alt="">
+                </div>
+            </div>
+            <div class="projects__item">
+                <div class="projects__item__info">
+                    <h4><a href="https://www.kolibri.is/">kolibri.is</a> [ 2019 ]</h4>
+                    <p>Website developed in collaboration with Kolibri.</p>
+                    <p>Using Prismic as a headless cms and Next.js (React) with Typescript and Zeit Now for deploy.</p>
+                </div>
+                <div class="projects__item__img">
+                    <img src="./assets/kolibri.png" alt="">
+                </div>
+            </div>
+            <div class="projects__item">
+                <div class="projects__item__info">
+                    <h4><a href="https://www.minilux.is/">minilux.is</a> [ 2018 ]</h4>
+                    <p>Wix template web with tweaked design and connection to Braintree payment gateway.</p>   
+                </div>
+                <div class="projects__item__img">
+                    <img src="./assets/minilux.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="jobs">
+            <h2 class="subheader">Previous Jobs</h2>
             <div>
                 <h4>Vettvangur ehf. - viðmótsforritun [ 2020-2021 ]</h4>
                 <ul>
@@ -114,8 +148,8 @@
             </div>
         </section>
 
-        <section id="education" class="article article__education">
-            <h2>My Education</h2>
+        <section id="education" class="education">
+            <h2 class="subheader">My Education</h2>
             <div>
                 <h4>Various online courses [ 2014-2020 ]</h4>
                 <p>Udemy, codeschool, codecademy etc.</p>

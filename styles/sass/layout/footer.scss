@@ -1,4 +1,8 @@
 footer {
-  height: 100px;
-  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 130px;
+  margin: 3rem;
+  background-color: #fff;
 }

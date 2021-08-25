@@ -1,0 +1,57 @@
+section {
+  background-color: #b8efdd;
+
+  &:first-child {
+    height: calc(100vh - 240px);
+    margin-top: 3rem;
+  }
+
+  .about {
+    &__img {
+      img {
+        position: absolute;
+        top: -2rem;
+        right: 3rem;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &__info {
+      width: 65%;
+    }
+  }
+
+  .skill {
+  }
+
+  .projects {
+    background-color: #b8efdd;
+
+    &__item {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 15px 0;
+
+      &__info {
+        width: 55%;
+        padding-right: 20px;
+      }
+
+      &__img {
+        width: 45%;
+      }
+    }
+  }
+
+  &.jobs {
+    background-color: #b8efdd;
+  }
+
+  &.education {
+    background-color: #b8efdd;
+  }
+}

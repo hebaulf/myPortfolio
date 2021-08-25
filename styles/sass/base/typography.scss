@@ -5,6 +5,30 @@ h4 {
   font-family: "Roboto Mono", monospace;
 }
 
-h1 {
+h1.header,
+h2.subheader {
+  position: absolute;
+  top: -4.5rem;
+  left: -0.4rem;
+  margin: 0;
+}
+
+h1.header {
   font-size: 7rem;
+}
+
+h2.subheader {
+  font-size: 3rem;
+  top: -2rem;
+  left: -0.19rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
 }
