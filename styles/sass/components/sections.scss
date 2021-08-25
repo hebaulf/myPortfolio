@@ -1,3 +1,4 @@
+/* Section styles */
 section {
   background-color: #b8efdd;
 
@@ -5,53 +6,76 @@ section {
     height: calc(100vh - 240px);
     margin-top: 3rem;
   }
+}
 
-  .about {
-    &__img {
-      img {
-        position: absolute;
-        top: -2rem;
-        right: 3rem;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
+/* Section About */
+section .about {
+  &__img {
+    img {
+      position: absolute;
+      top: -2rem;
+      right: 3rem;
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+      border-radius: 50%;
     }
+  }
+
+  &__info {
+    width: 65%;
+  }
+}
+
+/* Section Skill */
+section .skill {
+  &__item .progress {
+    position: relative;
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: #bbb;
+
+    .percent {
+      display: inline-block;
+      height: 100%;
+      width: 50%;
+      background-color: #ff94ca;
+    }
+
+    &.html .percent {
+      width: 90%;
+    }
+    &.css .percent {
+      width: 80%;
+    }
+    &.js .percent {
+      width: 45%;
+    }
+    &.react .percent {
+      width: 20%;
+    }
+    &.figma .percent {
+      width: 60%;
+    }
+  }
+}
+
+/* Section Projects */
+section .projects {
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 0;
 
     &__info {
-      width: 65%;
+      width: 55%;
+      padding-right: 20px;
     }
-  }
 
-  .skill {
-  }
-
-  .projects {
-    background-color: #b8efdd;
-
-    &__item {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      padding: 15px 0;
-
-      &__info {
-        width: 55%;
-        padding-right: 20px;
-      }
-
-      &__img {
-        width: 45%;
-      }
+    &__img {
+      width: 45%;
     }
-  }
-
-  &.jobs {
-    background-color: #b8efdd;
-  }
-
-  &.education {
-    background-color: #b8efdd;
   }
 }

@@ -9,22 +9,19 @@
     <meta name="description" content="This is my portfolio. I'm a web developer currently studying at Reykjavík Aca­demy of Web Develop­ment. I have some years of experience working at web agencies witch has introduced me to various programming languages and platforms.">
     <meta name="keywords" content="Heba, portfolio, developer, web developer">
     <meta name="author" content="Heba Farestveit Úlfarsdóttir">
-    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/normalize.css">
+    <link rel="stylesheet" href="./styles/css/styles.css">
 </head>
 
 <body>
     <!-- Start of Header -->
     <header>
-        <div>
-        
-        </div>
-
         <nav>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a class="line-hover" href="#about">About me</a></li>
+                <li><a class="line-hover" href="#skill">Skills</a></li>
+                <li><a class="line-hover" href="#projects">Projects</a></li>
+                <li><a class="line-hover" href="#education">Education</a></li>
             </ul>
         </nav>
     </header>
@@ -47,26 +44,42 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- Skill Section -->
         <section id="skill" class="skill">
             <h2 class="subheader">My Skills</h2>
             <div class="skill__item">
-                <h3>Html</h3>
-                <div class="meter orange nostripes">
-                    <span style="width: 85%"></span>
+                <h3>Html <span>90%</span></h3>
+                <div class="progress html">
+                    <span class="percent"></span>
                 </div>
             </div>
             <div class="skill__item">
-                <h3>CSS</h3>
+                <h3>CSS <span>80%</span></h3>
+                <div class="progress css">
+                    <span class="percent"></span>
+                </div>
             </div>
             <div class="skill__item">
-                <h3>JS</h3>
+                <h3>JS <span>45%</span></h3>
+                <div class="progress js">
+                    <span class="percent"></span>
+                </div>
             </div>
             <div class="skill__item">
-                <h3>Figma</h3>
+                <h3>React <span>20%</span></h3>
+                <div class="progress react">
+                    <span class="percent"></span>
+                </div>
+            </div>
+            <div class="skill__item">
+                <h3>Figma <span>60%</span></h3>
+                <div class="progress figma">
+                    <span class="percent"></span>
+                </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="projects">
             <h2 class="subheader">My Projects</h2>
             <div class="projects__item">
@@ -117,6 +130,7 @@
             </div>
         </section>
 
+        <!-- Jobs Section -->
         <section id="jobs" class="jobs">
             <h2 class="subheader">Previous Jobs</h2>
             <div>
@@ -148,6 +162,7 @@
             </div>
         </section>
 
+        <!-- Education Section -->
         <section id="education" class="education">
             <h2 class="subheader">My Education</h2>
             <div>
@@ -176,12 +191,9 @@
 
     <!-- Start of Footer -->
     <footer>
-        <a href="mailto:heba.farestveit@gmail.com">Email me</a>
-        <button onclick={}>Print my Portfolio</button>
+        <a class="line-hover" href="mailto:heba.farestveit@gmail.com">Email me</a>
+        <a class="line-hover" href="./assets/cv2021-heba.pdf" target="_blank">View printable portfolio</a>
     </footer>
     <!-- End of Footer -->
 </body>
-
-<script></script>
-
 </html>

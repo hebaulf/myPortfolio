@@ -1,3 +1,4 @@
+/* Heading styles */
 h1,
 h2,
 h3,
@@ -27,12 +28,42 @@ h3 {
   font-size: 1.2rem;
 }
 
+/* Paragraph styles */
 p {
   line-height: 1.5;
 }
 
+/* Anchor styles */
 a {
   text-decoration: none;
   color: #000;
   transition: all 0.3s;
+  position: relative;
+}
+
+a.line-hover {
+  display: block;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #9bffde;
+    z-index: -1;
+    width: 0;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      width: 100%;
+    }
+  }
 }
